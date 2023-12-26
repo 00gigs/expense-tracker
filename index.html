@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="record" action="process.php" method="post">
+            <input type="text" name="name-of-expense" placeholder="Expense"><br>
+            <input type="number" id="debit" name="expense" min="0" placeholder="$"><br>
+            <button type="submit">Add expense</button>
+        </form>
+        <button id="viewAll">View all expenses</button>
+    </div>
+    <div>
+        <p>Total expense</p>$<span id="total-expense">0.00</span></p>
+        <p>Most frequent</p><span id="MSF"></span>
+        <p>Most expensive</p><span id="MSE"></span>
+    </div>
+   
+</body>
+<script src="main.js"></script>
+</html>
